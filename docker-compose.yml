@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  nginx:
+    image: "1and1internet/ubuntu-16-nginx-php-7.2:latest"
+    container_name: ubuntu16
+    ports:
+      - "80:8080"
+    user: "70:0"
+    volumes:
+      - ./html:/var/www
