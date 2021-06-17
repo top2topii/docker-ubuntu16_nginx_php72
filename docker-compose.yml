@@ -7,4 +7,5 @@ services:
       - "80:8080"
     user: "70:0"
     volumes:
-      - ./html:/var/www
+      - ./html:/var/www/html
+      - ./files/site.conf:/etc/nginx/sites-enabled/site.conf
